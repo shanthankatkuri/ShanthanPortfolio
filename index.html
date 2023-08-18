@@ -1,0 +1,308 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shanthan's Portfolio</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive-style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img decoding="async" src="images/shanthan.png" class="img-fluid" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Navbar section exit -->
+    <!-- Banner section -->
+    <section id="home" class="banner_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 order-lg-1 order-2 banner-content">
+                    <h2 class="text-uppercase position-relative">Hell0 👋</h2>
+                    <h1 class="text-uppercase">I am Shanthan 😁</h1>
+                    <h5 class="text-uppercase"><span id="element"></span></h5>
+                    <div class="mt-5">
+                        <a class="main-btn primary-btn" onclick="callAlert('Please Contact me through LinkedIn :-)')">Hire Me</a>
+                        <a class="main-btn secondary-btn ms-4" onclick="callAlert('No CV uploaded!')" >Get CV</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 order-lg-2 order-1">
+                    <div class="top-right-img">
+                        <img decoding="async" src="images/home-right.webp" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner section exit -->
+    <!-- About section -->
+    <section id="about" class="about_wrapper">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                    <img decoding="async" src="images/about-us.webp" class="img-fluid" alt="About Us">
+                </div>
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <h3>let me <br>Introduce about <br>myself</h3>
+                    <p>I am Shanthan and i am studying(2022-present) CSE(AIML) at CVR College Of Engineering, Hyderabad. I have explored many fields like Web Development, App Development and Machine Learning in my 1st year of College and found my interest in WebD and ML.</p>
+                    <p>I have built some websites using HTML, CSS and JS and also built some cool games using Python you can check them out at my
+                        <a target ="_blank" href="https://github.com/shanthankatkuri">GitHub</a> and <a target ="_blank" href="https://www.linkedin.com/in/shanthan-reddy-k-625108254/">LinkedIn</a>
+                    </p>
+                    <a class="main-btn primary-btn mt-4" onclick="callAlert('No CV uploaded!')"">Download CV</a>
+                </div>
+    <!-- About section exit -->
+    <!-- projects Section -->
+    <section id="projects" class="project_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-left mb-md-5 mb-2">
+                    <h2>MY PROJECTS</h2>
+                </div>
+            </div>
+            <div class="row">
+                <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-one-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-one" type="button" role="tab" aria-controls="pills-one"
+                            aria-selected="true">Popular</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-two-tab" data-bs-toggle="pill" data-bs-target="#pills-two"
+                            type="button" role="tab" aria-controls="pills-two" aria-selected="true">Latest</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-three-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-three" type="button" role="tab" aria-controls="pills-three"
+                            aria-selected="true">Upcoming</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-one" role="tabpanel"
+                        aria-labelledby="pills-one-tab">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="project-img">
+                                   <a href="https://github.com/shanthankatkuri/SnakeGame"><img decoding="async" src="./images/portfolio/portfolio1.png" class="img-fluid w-100">
+                                    <div class="overlay"> <i class="fas fa-plus"></i></div></a>
+                                </div>
+                                <h5 class="mb-0 mt-4">SNAKE XENZIA</h5>
+                                <p>Built using Pygame</p>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="project-img">
+                                   <a href="https://github.com/shanthankatkuri/TicTacToe"><img decoding="async" src="./images/portfolio/portfolio2.png" class="img-fluid w-100">
+                                    <div class="overlay"><i class="fas fa-plus"></i></div></a>
+                                </div>
+                                <h5 class="mb-0 mt-4">TIC TAC TOE</h5>
+                                <p>Built using tkinter</p>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="project-img">
+                                    <a target="_blank" href="https://spitfire.netlify.app/"><img decoding="async" src="./images/portfolio/portfolio3.png" class="img-fluid w-100">
+                                    <div class="overlay"> <i class="fas fa-plus"></i></div></a>
+                                </div>
+                                <h5 class="mb-0 mt-4">SPITFIRE</h5>
+                                <p>Responsive website built using HTML and CSS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-two" role="tabpanel" aria-labelledby="pills-two-tab">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="project-img">
+                                   <a href="https://github.com/shanthankatkuri/HashEffect_Catalog_Hackathon"><img decoding="async" src="./images/portfolio/portfolio4.jpg" class="img-fluid w-100">
+                                    <div class="overlay"> <i class="fas fa-plus"></i></div></a>
+                                </div>
+                                <h5 class="mb-0 mt-4">HASHEFFECT</h5>
+                                <p>Hackathon conducted by Catalog</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-three" role="tabpanel" aria-labelledby="pills-three-tab">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="project-img" onclick="callAlert('This project is still in progress')">
+                                    <img decoding="async" src="./images/portfolio/portfolio7.webp" class="img-fluid w-100">
+                                    <div class="overlay"> <i class="fas fa-plus"></i></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">ML PROJECT</h5>
+                                <p>Predicts the mobile price when provided with specifications</p>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="project-img" onclick="callAlert('This project is still in progress')">
+                                    <img decoding="async" src="./images/portfolio/portfolio8.png" class="img-fluid w-100">
+                                    <div class="overlay"> <i class="fas fa-plus"></i></div>
+                                </div>
+                                <h5 class="mb-0 mt-4">E-COMMERCE WEBSITE</h5>
+                                <p>Will build it using HTML, Bootstrap and JS</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- projects Section exit -->
+    <!-- blog Section -->
+    <section id="blog" class="blog_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-5">
+                    <h2>BLOG</h2>
+                    <p>Planning to start it soon :-) <br
+                            class="d-none d-lg-block">
+                        Stay Tuned</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded-0 border-0 p-0" onclick="callAlert('This section is currently unavailable!')">
+                        <img decoding="async" src="./images/blog/technews.webp">
+                        <div class="blog_details">
+                            <div class="blog_text text-center">
+                                <h5 class="text-white mb-0">TECH NEWS</h5>
+                                <div class="border_line"></div>
+                                <p class="text-white">Know about the new Tech from here</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded-0 border-0 p-0" onclick="callAlert('This section is currently unavailable!')">
+                        <img decoding="async" src="./images/blog/journey.jpg">
+                        <div class="blog_details">
+                            <div class="blog_text text-center">
+                                <h5 class="text-white mb-0">MY JOURNEY</h5>
+                                <div class="border_line"></div>
+                                <p class="text-white">know all about my journey here</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded-0 border-0 p-0" onclick="callAlert('This section is currently unavailable!')">
+                        <img decoding="async" src="./images/blog/sodi.jpg">
+                        <div class="blog_details">
+                            <div class="blog_text text-center">
+                                <h5 class="text-white mb-0">WEEKLY CAUSERIE</h5>
+                                <div class="border_line"></div>
+                                <p class="text-white">I'll share my thooughts on general topics here every week</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                    <div class="card rounded-0 border-0 p-0" onclick="callAlert('This section is currently unavilable!')">
+                        <img decoding="async" src="./images/blog/cricket.jpg">
+                        <div class="blog_details">
+                            <div class="blog_text text-center">
+                                <h5 class="text-white mb-0">CRICKET</h5>
+                                <div class="border_line"></div>
+                                <p class="text-white">Let's discuss the greatest cricket mathches played</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog Section exit -->
+    <!-- Footer section -->
+    <section id="contact" class="footer_wrapper mt-3 mt-md-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 newsletter text-center px-4">
+                    <div>
+                        <h3 class="text-white">get update from anywhere</h3>
+                        <p class="text-white">Drop your mail to get updates about my Blog</p>
+
+                        <form class="row g-3 justify-content-center mt-4">
+                            <div class="col col-sm-6 col-lg-4">
+                                <input type="email" class="form-control" placeholder="Email address">
+                            </div>
+                            <div class="col col-auto">
+                                <button type="submit" class="main-btn secondary-btn border-white mb-3" onclick="callAlert('Mail Id sent Successfully!')" >Get
+                                    Started</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="footer-logo mb-3 mb-md-0">
+                        <img decoding="async" src="images/logo.png">
+                    </div>
+                    <div class="my-4 social-icons">
+                        <h5>Follow Me</h5>
+                        <ul class="list-unstyled d-flex justify-content-center align-items-center">
+                            <li><a href="https://www.linkedin.com/in/shanthan-reddy-k-625108254/"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://twitter.com/Shanthan_05"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/shanthan_katkuri/"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://github.com/shanthankatkuri"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-sm-12">
+                    <p class="footer-text text-center my-2">Copyright © All rights reserved | This portfolio
+                        is made by <a href="#">Shanthan</a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer section exit -->
+    <!-- Bootstrap 5 JS CDN Links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"></script>
+    <!-- Custom Js Link -->
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed=new Typed("#element",{
+            strings:["Student","Web Developer","ML Enthusiast"],
+            typeSpeed:50,
+            backSpeed:60,
+            loop:true
+        })
+    </script>
+</body>
+
+</html>
+
